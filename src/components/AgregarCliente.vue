@@ -61,7 +61,7 @@ export default {
         direccion: this.direccion
       };
       axios
-        .post("https://factapp4.herokuapp.com/clientes/agregar/", datosJson)
+        .post("https://factapp4-v4.herokuapp.com/clientes/agregar/", datosJson)
         .then(response => {
           alert(response.data.mensaje);
         })
@@ -75,15 +75,14 @@ export default {
 </script>
 
 <style>
+
   .vs-input{
   padding: 0 1rem;
   margin: 1rem;
   width: 200px;
   margin-left: auto;
   margin-right: auto;
-}
-
-    
+}   
   .vs-button{
   padding: 0 1rem;
   margin: 1rem;
