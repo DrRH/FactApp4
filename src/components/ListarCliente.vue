@@ -36,7 +36,7 @@ export default {
   },
   beforeCreate: function() {
     axios
-      .get("https://factapp4.herokuapp.com/clientes/lista")
+      .get("https://factapp4-v4.herokuapp.com/clientes/lista")
       .then(response => {
         this.lista_clientes = response.data;
       })
