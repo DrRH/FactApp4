@@ -8,10 +8,7 @@
       v-model="cedula"/>
     
     <label for="">Password</label>
-    <vs-input type="password" icon-after v-model="password" placeholder="Password">
-        <template #icon>
-        <i class='bx bx-lock-open-alt'></i>
-        </template>
+    <vs-input type="password" icon-after v-model="password" placeholder="">
      </vs-input>
   
     <vs-button v-on:click="loginUsuario">
