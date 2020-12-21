@@ -53,7 +53,7 @@
             <template #icon>
               <i class='bx bx-list-check' ></i>
             </template>
-            Listar usuarios
+            <a @click="navegarUsuarios">Listar Usuarios </a>
           </vs-sidebar-item>
         </vs-sidebar-group>
         <vs-sidebar-group>
@@ -139,6 +139,9 @@
     },
       navegarLogin: function() {
       this.$router.push({ name: "inicioSesion" });
+    },
+        navegarUsuarios: function() {
+      this.$router.push({ name: "verUsuarios" });
     }
   },
 

@@ -2,6 +2,7 @@ import VueRouter from "vue-router";
 import ListarCliente from "./components/ListarCliente";
 import AgregarCliente from "./components/AgregarCliente";
 import Login from "./components/Login";
+import ListarUsuario from "./components/ListarUsuario";
 import App from './App';
 
 const router = new VueRouter({
@@ -16,6 +17,11 @@ const router = new VueRouter({
       name: "inicioSesion",
       path: "/login",
       component: Login
+    },
+    {
+      name: "verUsuarios",
+      path: "/ver",
+      component: ListarUsuario
     }
   ]
 });
