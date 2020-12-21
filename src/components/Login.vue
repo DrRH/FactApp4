@@ -8,8 +8,7 @@
       v-model="cedula"/>
     
     <label for="">Password</label>
-    <vs-input
-    primary
+    <vs-input type="password" icon-after v-model="value2" placeholder="Password"
     v-model="password"/>
   
     <vs-button v-on:click="loginUsuario">
